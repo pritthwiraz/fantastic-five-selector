@@ -65,8 +65,23 @@ document.getElementById('player-expense-calculator').addEventListener('click', f
     const expensesForPlayer = document.getElementById('player-expense');
     expensesForPlayer.innerText = playerExpenses;
 
+    // return playerExpenses;
 })
 
 document.getElementById('calculate-total').addEventListener('click', function () {
+    const costOfManger = document.getElementById('manager-cost');
+    const managerCostString = costOfManger.value;
+    const managerCost = parseFloat(managerCostString);
+    const costOfCoach = document.getElementById('coach-cost');
+    const coachCostString = costOfCoach.value;
+    const coachCost = parseFloat(coachCostString);
 
+    const currentPlayerExpense = document.getElementById('player-expense');
+    const currentPlayerExpensesString = currentPlayerExpense.innerText;
+    const currentPlayerExpenses = parseFloat(currentPlayerExpensesString);
+
+    const totalExpenses = managerCost + coachCost + currentPlayerExpenses;
+
+    const totalCost = document.getElementById('total-expense');
+    totalCost.innerText = totalExpenses;
 })
