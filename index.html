@@ -25,56 +25,57 @@
             <div class="grid grid-cols-4 gap-5 w-10/12 mx-auto">
                 <div class="text-center bg-black text-white">
                     <img src="images/Messi.png" alt="">
-                    <h2 class="text-2xl font-medium mt-4 py-2">Lionel Messi</h2>
+                    <h2 id="player-one-name" class="text-2xl font-medium mt-4 py-2">Lionel Messi</h2>
                     <p>36 Goals & 120 Assists</p>
-                    <button class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
+                    <button id="player-one" class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
                 </div>
                 <div class="text-center bg-black text-white">
                     <img class="" src="images/Cristiano Ronaldo.jpg" alt="">
-                    <h2 class="text-2xl font-medium mt-4 py-2">Cristiano Ronaldo</h2>
+                    <h2 id="player-two-name" class="text-2xl font-medium mt-4 py-2">Cristiano Ronaldo</h2>
                     <p>20 Goals & 50 Assists</p>
-                    <button class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
+                    <button id="player-two" class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
                 </div>
                 <div class="text-center bg-black text-white">
                     <img src="images/Erling Haaland.jpg" alt="">
-                    <h2 class="text-2xl font-medium mt-4 py-2">Erling Haaland</h2>
+                    <h2 id="player-three-name" class="text-2xl font-medium mt-4 py-2">Erling Haaland</h2>
                     <p>15 Goals & 15 Assists</p>
-                    <button class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
+                    <button id="player-three" class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
                 </div>
                 <div class="text-center bg-black text-white">
                     <h1 class="text-2xl font-medium mt-4 py-2">Selected Players</h1>
-                    <ul>
-                        <li>Messi</li>
+                    <ul id="selected-players">
+
                     </ul>
                 </div>
                 <div class="text-center bg-black text-white">
                     <img src="images/Neymar.png" alt="">
-                    <h2 class="text-2xl font-medium mt-4 py-2">Neymar Jr</h2>
+                    <h2 id="player-four-name" class="text-2xl font-medium mt-4 py-2">Neymar Jr</h2>
                     <p>20 Goals & 20 Assists</p>
-                    <button class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
+                    <button id="player-four" class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
                 </div>
                 <div class="text-center bg-black text-white">
                     <img src="images/Paulo Dybala.jpg" alt="">
-                    <h2 class="text-2xl font-medium mt-4 py-2">Paulo Dybala</h2>
+                    <h2 id="player-five-name" class="text-2xl font-medium mt-4 py-2">Paulo Dybala</h2>
                     <p>19 Goals & 25 Assists</p>
-                    <button class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
+                    <button id="player-five" class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
                 </div>
                 <div class="text-center bg-black text-white">
                     <img src="images/Robert Lewandowski.jpg" alt="">
-                    <h2 class="text-2xl font-medium mt-4 py-2">Robert Levandowski</h2>
+                    <h2 id="player-six-name" class="text-2xl font-medium mt-4 py-2">Robert Levandowski</h2>
                     <p>30 Goals & 20 Assists</p>
-                    <button class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
+                    <button id="player-six" class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
                 </div>
                 <div class="text-center bg-black text-white">
-                    <h1 class="text-2xl font-medium mt-4 py-2">Budget</h1>
+                    <h1 class="text-2xl font-medium mt-2 py-1">Budget</h1>
                     <div class="grid grid-cols-2">
                         <label for="">Per Player</label>
-                        <input type="text" class="w-9/12 bg-black border-2 border-white p-1">
+                        <input id="player-cost-field" type="text" class="w-9/12 bg-black border-2 border-white p-1">
                     </div>
-                    <button class="bg-sky-800 px-16 py-1 mt-4 mb-4 text-lg ">Calculate</button>
+                    <button id="player-expense-calculator"
+                        class="bg-sky-800 px-16 py-1 mt-4 mb-4 text-lg ">Calculate</button>
                     <div class="grid grid-cols-2 mb-2">
                         <label for="">Player Expenses</label>
-                        <input type="text" class="w-9/12 bg-black border-none p-1">
+                        <h4 class="w-3/6 bg-black border-none">$<span>00</span>
                     </div>
                     <div class="grid grid-cols-2 mb-2">
                         <label for="">Manager</label>
@@ -84,29 +85,29 @@
                         <label class="mr-4" for="">Coach</label>
                         <input type="text" class="w-9/12 bg-black border-2 border-white p-1">
                     </div>
-                    <button class="bg-sky-800 px-12 py-1 mt-4 mb-4 text-lg ">Calculate Total</button>
+                    <button class="bg-sky-800 px-12 py-1 mt-2 mb-4 text-lg ">Calculate Total</button>
                     <div class="grid grid-cols-2 mb-2">
                         <label for="">Player Expenses</label>
-                        <input type="text" class="w-9/12 bg-black border-none p-1">
+                        <input type="text" class="w-9/12 bg-black border-none">
                     </div>
                 </div>
                 <div class="text-center bg-black text-white">
                     <img src="images/Harry Kane.jpg" alt="">
-                    <h2 class="text-2xl font-medium mt-4 py-2">Harry Kane</h2>
+                    <h2 id="player-seven-name" class="text-2xl font-medium mt-4 py-2">Harry Kane</h2>
                     <p>16 Goals & 20 Assists</p>
-                    <button class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
+                    <button id="player-seven" class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
                 </div>
                 <div class="text-center bg-black text-white">
                     <img src="images/Sergio Ramos.png" alt="">
-                    <h2 class="text-2xl font-medium mt-4 py-2">Sergio Ramos</h2>
+                    <h2 id="player-eight-name" class="text-2xl font-medium mt-4 py-2">Sergio Ramos</h2>
                     <p>6 Goals & 10 Assists</p>
-                    <button class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
+                    <button id="player-eight" class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
                 </div>
                 <div class="text-center bg-black text-white">
                     <img src="images/Kylian Mbappé.png" alt="">
-                    <h2 class="text-2xl font-medium mt-4 py-2">Kylian Mbappé</h2>
+                    <h2 id="player-nine-name" class="text-2xl font-medium mt-4 py-2">Kylian Mbappé</h2>
                     <p>12 Goals & 12 Assists</p>
-                    <button class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
+                    <button id="player-nine" class="bg-sky-800 px-14 py-1 mt-4 mb-4 text-xl">SELECT</button>
                 </div>
             </div>
         </section>
