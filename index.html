@@ -44,7 +44,6 @@
                 <div class="text-center bg-black text-white">
                     <h1 class="text-2xl font-medium mt-4 py-2">Selected Players</h1>
                     <ul id="selected-players">
-
                     </ul>
                 </div>
                 <div class="text-center bg-black text-white">
@@ -75,19 +74,20 @@
                         class="bg-sky-800 px-16 py-1 mt-4 mb-4 text-lg ">Calculate</button>
                     <div class="grid grid-cols-2 mb-2">
                         <label for="">Player Expenses</label>
-                        <h4 class="w-3/6 bg-black border-none">$<span>00</span>
+                        <h4 class="w-3/6 bg-black border-none">$<span id="player-expense">00</span>
                     </div>
                     <div class="grid grid-cols-2 mb-2">
                         <label for="">Manager</label>
-                        <input type="text" class="w-9/12 bg-black border-2 border-white p-1">
+                        <input id="manager-cost" type="text" class="w-9/12 bg-black border-2 border-white p-1">
                     </div>
                     <div class="grid grid-cols-2 mb-2">
                         <label class="mr-4" for="">Coach</label>
-                        <input type="text" class="w-9/12 bg-black border-2 border-white p-1">
+                        <input id="coach-cost" type="text" class="w-9/12 bg-black border-2 border-white p-1">
                     </div>
-                    <button class="bg-sky-800 px-12 py-1 mt-2 mb-4 text-lg ">Calculate Total</button>
+                    <button id="calculate-total" class="bg-sky-800 px-12 py-1 mt-2 mb-4 text-lg ">Calculate
+                        Total</button>
                     <div class="grid grid-cols-2 mb-2">
-                        <label for="">Player Expenses</label>
+                        <label for="">Total Expenses</label>
                         <input type="text" class="w-9/12 bg-black border-none">
                     </div>
                 </div>

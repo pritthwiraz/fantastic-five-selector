@@ -9,14 +9,6 @@ function playerSelection(elementId) {
 
     selectedPlayers.appendChild(li);
 }
-document.getElementById('player-expense-calculator').addEventListener('click', function () {
-    const playerCostField = document.getElementById('player-cost-field');
-    const costPerPlayer = playerCostField.value
-
-    const playerExpenses = costPerPlayer * 5;
-    console.log(playerExpenses);
-})
-
 document.getElementById('player-one').addEventListener('click', function () {
     playerSelection('player-one-name');
     const elementId = document.getElementById('player-one');
@@ -63,4 +55,18 @@ document.getElementById('player-nine').addEventListener('click', function () {
     elementId.disabled = true;
 })
 
+document.getElementById('player-expense-calculator').addEventListener('click', function () {
+    const playerCostField = document.getElementById('player-cost-field');
+    const costPerPlayer = playerCostField.value
+    const selectedPlayers = document.getElementById("selected-players").getElementsByTagName("li").length
 
+    const playerExpenses = costPerPlayer * selectedPlayers;
+
+    const expensesForPlayer = document.getElementById('player-expense');
+    expensesForPlayer.innerText = playerExpenses;
+
+})
+
+document.getElementById('calculate-total').addEventListener('click', function () {
+
+})
